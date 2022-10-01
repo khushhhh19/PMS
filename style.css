@@ -140,8 +140,6 @@ ul {
   width: calc(100vw - 300px);
   /* position: fixed; */
   float: right;
-
- 
 }
 
 .nav-bar {
@@ -154,12 +152,12 @@ ul {
   align-items: center;
   justify-content: flex-end;
   padding: 0 30px;
-  background: rgba( 255, 255, 255, 0.3 );
-  box-shadow: 0 8px 25px -10px rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 25px -10px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   /* border-radius: 10px; */
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .nav-bar-search {
@@ -175,7 +173,6 @@ ul {
 .logout-btn {
   height: 100%;
   width: 100px;
-  
 }
 
 .search-bar-input {
@@ -204,14 +201,13 @@ ul {
 .greeting-banner {
   height: 200px;
   width: 90%;
-  background: rgba( 255, 255, 255, 0.3 );
-  box-shadow: 0 8px 25px -10px rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 25px -10px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   /* border-radius: 10px; */
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
   margin: 25px auto;
-
 }
 
 .dashboard-cards {
@@ -220,22 +216,85 @@ ul {
   margin: auto;
   padding: 25px;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-around;
+}
+
+.teams-cards {
+  height: auto;
+  width: 90%;
+  margin: auto;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* align-items:center;
+  justify-content: space-around; */
 }
 
 .card {
   height: 200px;
   width: 200px;
-  background: rgba( 255, 255, 255, 0.3 );
-  box-shadow: 0 8px 30px -10px rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 30px -10px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   /* border-radius: 10px; */
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
   margin: 25px auto;
 }
 
-.fa-people-group, .fa-laptop-file, .fa-bars-progress {
+.fa-people-group,
+.fa-laptop-file,
+.fa-bars-progress,
+.fa-plus,
+.fa-user,
+.fa-window-restore {
   display: block;
+  margin-bottom: 10px;
+}
+
+.card-add {
+  background: transparent;
+  border: dashed 3px #67748e;
+}
+
+.user-dashboard-cards {
+  height: auto;
+  width: 90%;
+  margin: auto;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.user-card {
+  height: 150px;
+  width: 150px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 30px -10px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  /* border-radius: 10px; */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 25px auto;
+}
+
+.project-desc {
+  height: auto;
+  width: 90%;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 25px -10px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  /* border-radius: 10px; */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 25px auto;
+  color: #67748e;
+}
+
+.lead {
+  margin-top: 5px;
+  text-align: justify;
+  word-spacing: 2px;
 }
