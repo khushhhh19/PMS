@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../responsive.css" />
+    <link rel="stylesheet" href="../modalstyle.css" />
     <title>User Stories Page</title>
   </head>
   <body>
@@ -37,15 +38,19 @@
           <ul class="side-bar-links">
             <li class="current">
               <i class="text-gray fa-solid fa-house mxr-1"></i
-              ><a href="#">Home</a>
+              ><a href="userDash.html">Home</a>
             </li>
             <li>
-              <i class="text-gray fa-sharp fa-solid fa-bars-progress mxr-1"></i
-              ><a href="#">Tasks</a>
+              <i class="text-gray fa-sharp fa-solid fa-user mxr-1"></i
+              ><a href="#">Profile</a>
             </li>
             <li>
-              <i class="text-gray fa-solid fa-people-group mxr-1"></i
-              ><a href="#">Teams</a>
+              <i class="text-gray fa-solid fa-window-restore mxr-1"></i
+              ><a href="userStoryPage.html">Stories</a>
+            </li>
+            <li>
+              <i class="text-gray fa-solid fa-bars-progress mxr-1"></i
+              ><a href="userTaskPage.html">Tasks</a>
             </li>
           </ul>
         </div>
@@ -86,56 +91,116 @@
       </div>
       <div class="user-dashboard-cards">
         <div class="user-card place-center">
-          <a href="" style="text-align: center"
+          <a href="#" id="button3" style="text-align: center" class="button"
             ><i class="fa-solid fa-window-restore fa-3x"></i>Story 1</a
           >
         </div>
         <div class="user-card place-center">
-          <a href="" style="text-align: center"
+          <a href="story.html" style="text-align: center"
             ><i class="fa-solid fa-window-restore fa-3x"></i>Story 2</a
           >
         </div>
         <div class="user-card place-center">
-          <a href="" style="text-align: center"
+          <a href="story.html" style="text-align: center"
             ><i class="fa-solid fa-window-restore fa-3x"></i>Story 3</a
           >
         </div>
         <div class="user-card place-center">
-          <a href="" style="text-align: center"
+          <a href="story.html" style="text-align: center"
             ><i class="fa-solid fa-window-restore fa-3x"></i>Story 4</a
           >
         </div>
         <div class="user-card place-center">
-          <a href="" style="text-align: center"
+          <a href="story.html" style="text-align: center"
             ><i class="fa-solid fa-window-restore fa-3x"></i>Story 5</a
           >
         </div>
         <div class="user-card place-center">
-          <a href="" style="text-align: center"
+          <a href="story.html" style="text-align: center"
             ><i class="fa-solid fa-window-restore fa-3x"></i>Story 6</a
           >
         </div>
         <div class="user-card place-center">
-          <a href="" style="text-align: center"
+          <a href="story.html" style="text-align: center"
             ><i class="fa-solid fa-window-restore fa-3x"></i>Story 7</a
           >
         </div>
         <div class="user-card place-center">
-          <a href="" style="text-align: center"
+          <a href="story.html" style="text-align: center"
             ><i class="fa-solid fa-window-restore fa-3x"></i>Story 8</a
           >
         </div>
         <div class="user-card place-center">
-          <a href="" style="text-align: center"
+          <a href="story.html" style="text-align: center"
             ><i class="fa-solid fa-window-restore fa-3x"></i>Story 9</a
           >
         </div>
         <div class="user-card place-center">
-          <a href="" style="text-align: center"
+          <a href="story.html" style="text-align: center"
             ><i class="fa-solid fa-window-restore fa-3x"></i>Story 10</a
           >
         </div>
       </div>
     </div>
+    <div class="bg-modal">
+      <div class="modal-contents">
+        <div class="close">+</div>
+        <img src="https://richardmiddleton.me/comic-100.png" alt="" />
+        <div class="model-task-heading">
+          <h3>STORY 1</h3>
+        </div>
+        <div class="modal-task-desc">
+          <h3>Story Description</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            nemo saepe quasi, doloremque nostrum eligendi minus natus? Quibusdam
+            distinctio aliquam ipsa magnam eligendi aut nesciunt excepturi! A
+            repudiandae iste magnam. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Quidem saepe, voluptate soluta voluptatibus quam
+            nihil. Tenetur pariatur nemo esse odio, nostrum sequi praesentium
+            reprehenderit. Repellendus distinctio minima fugit perferendis
+            pariatur?
+          </p>
+        </div>
+        <div class="modal-date">
+          <h3>Due date</h3>
+          <p>dd-mm-yyy</p>
+        </div>
+        <!-- <div class="modal-task-progress">
+          <h3>Progress</h3>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+        </div> -->
+        
+        <div class="teams-cards">
+          <div><h3>Team Members</h3></div>
+          <div class="card place-center">
+            <a href="" style="text-align: center"
+              ><i class="fa-solid fa-user fa-3x"></i>User 1</a
+            >
+          </div>
+          <div class="card place-center">
+            <a href="" style="text-align: center"
+              ><i class="fa-solid fa-user fa-3x"></i>User 2</a
+            >
+          </div>
+          <div class="card place-center">
+            <a href="" style="text-align: center"
+              ><i class="fa-solid fa-user fa-3x"></i>User 3</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("button3").addEventListener("click", function () {
+        document.querySelector(".bg-modal").style.display = "flex";
+      });
+
+      document.querySelector(".close").addEventListener("click", function () {
+        document.querySelector(".bg-modal").style.display = "none";
+      });
+    </script>
   </body>
 </html>
